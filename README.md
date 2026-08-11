@@ -6,4 +6,3 @@ This repository contains a deterministic Project Lighthouse physics task under:
 
 The task audits conflicting numerical campaigns for an anisotropy-driven Anderson transition using transfer-matrix localization lengths, participation scaling, adjacent-gap statistics and twisted-boundary sensitivity.
 
-Before submission, run the official Harbor Oracle and NOP validation commands and paste their complete outputs into `VALIDATION.md`.
