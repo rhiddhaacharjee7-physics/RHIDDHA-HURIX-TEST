@@ -1,0 +1,37 @@
+{
+  "model": "anisotropic_3d_anderson",
+  "hamiltonian": "H=sum_r epsilon_r |r><r|-sum_r,mu t_mu(|r+mu><r|+h.c.)",
+  "energy_target": 0.0,
+  "hopping": {
+    "tx": 1.0,
+    "ty": 1.0,
+    "tz_parameter": "alpha"
+  },
+  "disorder": {
+    "distribution": "uniform",
+    "minimum": -8.0,
+    "maximum": 8.0,
+    "strength_W": 16.0
+  },
+  "anisotropies": [
+    0.58,
+    0.64,
+    0.68,
+    0.72,
+    0.76,
+    0.82,
+    0.88
+  ],
+  "transfer_widths": [
+    6,
+    8,
+    10,
+    12,
+    14
+  ],
+  "diagonalization_sizes": [
+    5,
+    6,
+    7
+  ]
+}
