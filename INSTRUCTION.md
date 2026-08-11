@@ -1,1 +1,9 @@
+Three numerical campaigns studying the same anisotropic disordered tight-binding model disagree about whether reducing the inter-plane hopping produces a genuine Anderson transition or only a finite-size crossover.
 
+The Hamiltonian and parameter conventions are defined in `/app/data/model_definition.json`. Run-level transfer-matrix measurements are in `/app/data/transfer_runs.csv` and run-level eigenstate and spectral measurements are in `/app/data/spectral_runs.csv`. Some records are restarted checkpoints or numerically invalid. Apply the numerical validity requirements in `/app/data/validity_limits.json`. The `compact_states` column records exact compact modes removed upstream; the reported participation and level-statistics columns refer only to the retained dispersive states.
+
+Estimate the critical anisotropy at zero energy and its uncertainty, determine the correlation-length exponent, and classify every sampled anisotropy as metallic, critical or localized. Support the conclusion jointly using quasi-one-dimensional localization-length scaling, participation scaling, adjacent-gap statistics and twisted-boundary sensitivity.
+
+Write `/app/output/quality_control.csv`, `/app/output/transfer_scaling.csv`, `/app/output/spectral_observables.csv`, `/app/output/critical_fit.json`, `/app/output/phase_map.csv` and `/app/output/report.md`.
+
+Each input sample must appear exactly once in `quality_control.csv` with a retention decision and reason. Numerical tables must include sample counts and uncertainty estimates. `critical_fit.json` must contain the critical anisotropy, correlation-length exponent, confidence intervals, fit quality and selected finite-size model. The report must state whether the campaigns support a true transition and explain disagreement among the diagnostics.
