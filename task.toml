@@ -1,0 +1,81 @@
+schema_version = "1.4"
+
+[task]
+name = "physics/anisotropic-anderson-audit"
+version = "1.0.0"
+description = "Audit conflicting numerical campaigns near an anisotropy-driven Anderson transition."
+authors = [{ name = "Rhiddha Acharjee", email = "rhiddhaacharjee777@gmail.com" }]
+keywords = [
+    "physics",
+    "condensed-matter",
+    "anderson-localization",
+    "finite-size-scaling",
+    "spectral-statistics"
+]
+
+[metadata]
+domain = "Physics"
+
+subdomains = [
+    "Condensed-Matter Physics",
+    "Anderson Localization",
+    "Spectral Statistics",
+    "Finite-Size Scaling"
+]
+
+workflow_types = [
+    "Computational Modelling Workflow",
+    "Comparative Workflow"
+]
+
+task_types = [
+    "Numerical Quality Audit",
+    "Critical-Parameter Estimation",
+    "Phase Classification"
+]
+
+skills = [
+    "Transfer-Matrix Analysis",
+    "Lyapunov Exponents",
+    "Inverse Participation Ratios",
+    "Spectral Statistics",
+    "Bootstrap Uncertainty",
+    "Nonlinear Model Selection"
+]
+
+tool_types = [
+    "Python",
+    "NumPy",
+    "SciPy",
+    "pandas"
+]
+
+estimated_step_count = 32
+expected_expert_time_minutes = 75
+difficulty = "advanced-plus"
+
+difficulty_explanation = """
+The solver must audit duplicated and invalid runs, aggregate independent
+numerical campaigns, compare finite-size scaling models, quantify uncertainty
+and reconcile four diagnostics that exhibit different finite-size drift.
+"""
+
+references = [
+    "MacKinnon, A., & Kramer, B. (1983). The scaling theory of electrons in disordered solids: Additional numerical results. Zeitschrift fuer Physik B, 53, 1-13. [Transfer-matrix scaling.]",
+    "Slevin, K., & Ohtsuki, T. (1999). Corrections to scaling at the Anderson transition. Physical Review Letters, 82, 382-385. [Irrelevant finite-size corrections.]",
+    "Evers, F., & Mirlin, A. D. (2008). Anderson transitions. Reviews of Modern Physics, 80, 1355-1417. [Participation and spectral diagnostics.]"
+]
+
+[agent]
+timeout_sec = 1200.0
+
+[verifier]
+timeout_sec = 900.0
+
+[environment]
+network_mode = "no-network"
+build_timeout_sec = 900.0
+os = "linux"
+cpus = 2
+memory_mb = 4096
+storage_mb = 4096
