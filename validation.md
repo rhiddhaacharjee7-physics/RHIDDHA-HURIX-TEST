@@ -73,9 +73,6 @@ The NOP agent produced no valid solution and correctly received the required mea
 
 **PASS**
 
-The task satisfies the required Harbor validation conditions:
-
-```text
 Oracle Mean = 1.000
 NOP Mean    = 0.000
 ```
