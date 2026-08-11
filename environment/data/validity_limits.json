@@ -1,0 +1,10 @@
+{
+  "minimum_transfer_blocks": 10,
+  "minimum_transfer_length": 50000,
+  "maximum_relative_gamma_error": 0.06,
+  "maximum_qr_failures": 0,
+  "maximum_eigenpair_residual": 1e-07,
+  "maximum_orthogonality_defect": 1e-06,
+  "minimum_converged_states": 16,
+  "require_twist_partner": true
+}
