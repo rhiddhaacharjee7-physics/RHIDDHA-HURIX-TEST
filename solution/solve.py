@@ -720,5 +720,5 @@ degrees of freedom={crit['degrees_of_freedom']}.
 
 
 (
-    OUT / "report.md"
+    OUT / "summary.md"
 ).write_text(report)

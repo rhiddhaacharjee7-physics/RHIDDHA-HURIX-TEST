@@ -4,6 +4,6 @@ The Hamiltonian and parameter conventions are defined in `/app/data/model_defini
 
 Estimate the critical anisotropy at zero energy and its uncertainty, determine the correlation-length exponent, and classify every sampled anisotropy as metallic, critical or localized. Support the conclusion jointly using quasi-one-dimensional localization-length scaling, participation scaling, adjacent-gap statistics and twisted-boundary sensitivity.
 
-Write `/app/output/quality_control.csv`, `/app/output/transfer_scaling.csv`, `/app/output/spectral_observables.csv`, `/app/output/critical_fit.json`, `/app/output/phase_map.csv` and `/app/output/report.md`.
+Write `/app/output/quality_control.csv`, `/app/output/transfer_scaling.csv`, `/app/output/spectral_observables.csv`, `/app/output/critical_fit.json`, `/app/output/phase_map.csv` and `/app/output/summary.md`.
 
-Each input sample must appear exactly once in `quality_control.csv` with a retention decision and reason. Numerical tables must include sample counts and uncertainty estimates. `critical_fit.json` must contain the critical anisotropy, correlation-length exponent, confidence intervals, fit quality and selected finite-size model. The report must state whether the campaigns support a true transition and explain disagreement among the diagnostics.
+Each input sample must appear exactly once in `quality_control.csv` with a retention decision and reason. Numerical tables must include sample counts and uncertainty estimates. `critical_fit.json` must contain the critical anisotropy, correlation-length exponent, confidence intervals, fit quality and selected finite-size model. The final summary must state whether the campaigns support a true transition and explain disagreement among the diagnostics.

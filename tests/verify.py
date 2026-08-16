@@ -28,7 +28,7 @@ required = [
     "spectral_observables.csv",
     "critical_fit.json",
     "phase_map.csv",
-    "report.md",
+    "summary.md",
 ]
 
 
@@ -486,8 +486,8 @@ assert (
 ).all()
 
 
-report = (
-    OUT / "report.md"
+summary = (
+    OUT / "summary.md"
 ).read_text().lower()
 
 
@@ -500,8 +500,8 @@ for term in [
 ]:
 
     assert (
-        term in report
-    ), f"report missing {term}"
+        term in summary
+    ), f"summary missing {term}"
 
 
 print("PASS")
